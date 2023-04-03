@@ -1,0 +1,13 @@
+<script>
+    for(let number = 2 ; number <= 100 ; number++){
+        let primeno = false;
+        for(let i = 2 ; i <= number ; i++){
+            if(number % 2 === 0 && i != number){
+                primeno = true;
+            }
+        }
+        if(primeno == false){
+            console.log(number ,"prime No");
+        }
+    }
+</script>

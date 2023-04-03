@@ -1,0 +1,23 @@
+<script>
+    
+function fibonacciSeries(num) {
+    if(num < 2) {
+        return num;
+    }
+    else {
+        return fibonacciSeries(num-1) + fibonacciSeries(num - 2);
+    }
+}
+
+
+const nthTerms = prompt('enter the given no');
+
+if(nthTerms <= 0) {
+    // console.log('Enter a positive integer.');
+}
+else {
+    for(let i = 0; i < nthTerms; i++) {
+        console.log(fibonacciSeries(i));
+    }
+}
+</script>

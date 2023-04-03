@@ -1,0 +1,36 @@
+<script>
+
+    function  ReverseString(str) {
+        let newString = "";
+        for(let i = str.length -1 ; i >= 0 ; i--){
+            newString += str[i]
+        }
+        return newString;
+    }
+
+
+
+    // write a program to reverse a string
+    let str = "My name is Vedprakash Bind";
+const fstring = ReverseString(str);
+console.log(fstring);
+    
+    
+</script>
+
+
+<script>
+    // another method using In Built function
+    function ReverseString(string) {
+        let newArrstr = string.split(' ');
+        console.log(newArrstr);
+
+        let reverseArray = newArrstr.reverse();
+        console.log(reverseArray);
+
+        let joinArray  = reverseArray.join(' ');
+        console.log(joinArray);
+    }
+    let string = 'My name is Vedprakash Bind';
+    ReverseString(string)
+</script>

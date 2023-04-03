@@ -1,0 +1,19 @@
+<script>
+    //fibonaaic series without recursion
+    const number = prompt('enter the no');
+    let no1 = 0;
+    let no2 = 1;
+    let result;
+    console.log('fibonanic series');
+    console.log(no1);
+    console.log(no2);
+    result = no1 + no2;
+    console.log(no2);
+    while(result<= number){
+        no1 = no2;
+        no2 = result;
+        result = no1 + no2;
+        console.log(result); 
+    }
+
+</script>

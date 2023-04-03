@@ -1,0 +1,40 @@
+<!-- <script>
+  function palindromeString(string) {
+    const length = string.length;
+
+    for (let i = 0; i < length / 2; i++) {
+      if (string[i] !== string[length - 1 - i]) {
+        return "It is not a palindrome";
+      }
+    }
+    return "It is a palindrome";
+  }
+
+  const string = "i am learning js";
+
+  const value = palindromeString(string);
+
+  console.log(value);
+</script> -->
+
+<script>
+    function  checkPalindromstaring(str) {
+        const newArray = str.split('');
+        console.log(newArray);
+
+        const ReverseArray = newArray.reverse();
+        console.log(ReverseArray);
+
+        const ReverseString = ReverseArray.join('');
+        console.log(ReverseString)
+
+        if(str == ReverseString){
+            console.log('It is a palindrome');
+        }
+        else {
+            console.log('It is not a palindrome');
+        }
+    }
+    const str = 'ravi';
+       checkPalindromstaring(str);
+</script>

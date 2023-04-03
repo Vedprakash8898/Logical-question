@@ -1,0 +1,25 @@
+<!-- <script>
+    function Duplicatevalue(arr) {
+        let uniqueArray = [];
+        for(i of arr){
+            if(uniqueArray.indexOf(i) === -1){
+                uniqueArray.push(i)
+            }
+        }
+        console.log(uniqueArray);
+    }
+    const arr = [10,30,20,45,10,25,30,75];
+    console.log(arr);
+    Duplicatevalue(arr)
+</script> -->
+
+
+<script>
+    function getUniqueValue(arr1){
+        let uniqueValue = [...new Set(arr1)];
+        console.log(uniqueValue);
+    }
+    const arr1 = [10,30,20,45,10,25,30,75];
+    console.log(arr1);
+    getUniqueValue(arr1);
+</script>

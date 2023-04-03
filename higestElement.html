@@ -1,0 +1,18 @@
+<script>
+  function HigestElementArray(arr) {
+    let maxValue = "";
+
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] > maxValue) {
+        maxValue = arr[i];
+      }
+    }
+    return maxValue;
+  }
+
+  let arr = [30, 52, 68, 96, 85];
+  console.log(arr);
+  const ans = HigestElementArray(arr);
+
+  console.log(ans);
+</script>

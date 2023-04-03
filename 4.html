@@ -1,0 +1,14 @@
+<script>
+    // Wap to reverse a integer without converting into string
+    let reverse = 0;
+    let number = 12345;
+    let lastDigit;
+
+    while(number != 0){
+        lastDigit = number % 10;
+        console.log(lastDigit);
+        reverse = reverse * 10 + lastDigit;
+        number = Math.floor(number/10)
+    }
+    console.log(reverse);
+</script>
